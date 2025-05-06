@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ERP</h1>
+        <nav>
+            <ul>
+                <li><a href="#guia-instalacion">Guia de instalación y configuración básica de Odoo</a></li>
+                <li><a href="#modulos">Modulos instalados</a></li>
+                <li><a href="#backup">Copia de seguridad y restaurar la base de datos</a></li>
+                <li><a href="#conclusiones">Conclusiones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="guia-instalacion">
+            <h2>Guía de instalación y configuración básica de Odoo (Ubuntu)</h2>
+            <p>Odoo es un software de gestión empresarial que permite gestionar diferentes áreas de una empresa, como ventas, inventario, contabilidad, etc. A continuación se presenta una guía básica para su instalación y configuración.</p>
+            <h3>Requisitos previos</h3>
+            <ul>
+                <li>Servidor con Ubuntu 20.04 o superior.</li>
+                <li>Python 3.6 o superior.</li>
+                <li>PostgreSQL 10 o superior.</li>
+                <li>Node.js y npm (opcional, para algunos módulos).</li>
+            </ul>
+            <h3>Instalación</h3>
+            <ol>
+                <li>Actualizar el sistema: <code>sudo apt update && sudo apt upgrade</code></li>
+                <li>Instalar dependencias: <code>sudo apt install python3-pip build-essential libssl-dev libffi-dev python3-dev</code></li>
+                <li>Instalar PostgreSQL: <code>sudo apt install postgresql</code></li>
+                <li>Crear un usuario PostgreSQL: <code>sudo -u postgres createuser --createdb --username postgres --pwprompt odoo</code></li>
+                <li>Instalar Odoo: Clonar el repositorio desde GitHub o descargar la última versión desde la página oficial.</li>
+            </ol>
+            <h3>Configuración básica</h3>
+            <p>Una vez instalado Odoo, se debe configurar el archivo de configuración <code>/etc/odoo.conf</code> con los datos de conexión a la base de datos y otros parámetros necesarios.</p>
+            <p>Para iniciar Odoo, se puede utilizar el comando <code>./odoo-bin -c /etc/odoo.conf</code>. También se puede configurar un servicio para que Odoo se inicie automáticamente al arrancar el sistema.</p>
+            <h3>Acceso a la interfaz web</h3>
+            <p>Una vez iniciado Odoo, se puede acceder a la interfaz web desde un navegador ingresando la dirección <code>http://localhost:8069</code>. Desde allí, se pueden crear bases de datos y configurar los módulos necesarios.</p>
+        </section>
+
+            <h2>Guía de instalación y configuración básica de Odoo (Windows)</h2>
+            <p>La instalación de Odoo en Windows es un poco diferente a la de Linux. A continuación se presenta una guía básica para su instalación y configuración.</p>
+            <h3>Requisitos previos</h3>
+            <ul>
+                <li>Windows 10 o superior.</li>
+                <li>Python 3.6 o superior.</li>
+                <li>PostgreSQL 10 o superior.</li>
+                <li>Node.js y npm (opcional, para algunos módulos).</li>
+            </ul>
+            <h3>Instalación</h3>
+            <ol>
+                <li>Descargar el instalador de Odoo desde la página oficial.</li>
+                <li>Ejecutar el instalador y seguir las instrucciones.</li>
+                <li>Configurar PostgreSQL y crear un usuario para Odoo.</li>
+                <li>Iniciar Odoo desde el menú de inicio o desde el acceso directo creado durante la instalación.</li>
+            </ol>
+            <h3>Configuración básica</h3>
+            <p>Una vez instalado Odoo, se puede acceder a la interfaz web desde un navegador ingresando la dirección <code>http://localhost:8069</code>. Desde allí, se pueden crear bases de datos y configurar los módulos necesarios.</p>
+
+        </section>
+        
+
+    </main>
+</body>
+</html>
