@@ -27,7 +27,6 @@
                 <li>Servidor con Ubuntu 20.04 o superior.</li>
                 <li>Python 3.6 o superior.</li>
                 <li>PostgreSQL 10 o superior.</li>
-                <li>Node.js y npm (opcional, para algunos módulos).</li>
             </ul>
             <h3>Instalación</h3>
             <ol>
@@ -39,7 +38,7 @@
             </ol>
             <h3>Configuración básica</h3>
             <p>Una vez instalado Odoo, se debe configurar el archivo de configuración <code>/etc/odoo.conf</code> con los datos de conexión a la base de datos y otros parámetros necesarios.</p>
-            <p>Para iniciar Odoo, se puede utilizar el comando <code>./odoo-bin -c /etc/odoo.conf</code>. También se puede configurar un servicio para que Odoo se inicie automáticamente al arrancar el sistema.</p>
+            <p>Para iniciar Odoo, se puede utilizar el comando <code>sudo systemctl start odoo</code>. También se puede configurar un servicio para que Odoo se inicie automáticamente al arrancar el sistema.</p>
             <h3>Acceso a la interfaz web</h3>
             <p>Una vez iniciado Odoo, se puede acceder a la interfaz web desde un navegador ingresando la dirección <code>http://localhost:8069</code>. Desde allí, se pueden crear bases de datos y configurar los módulos necesarios.</p>
         </section>
@@ -48,10 +47,8 @@
             <p>La instalación de Odoo en Windows es un poco diferente a la de Linux. A continuación se presenta una guía básica para su instalación y configuración.</p>
             <h3>Requisitos previos</h3>
             <ul>
-                <li>Windows 10 o superior.</li>
-                <li>Python 3.6 o superior.</li>
-                <li>PostgreSQL 10 o superior.</li>
-                <li>Node.js y npm (opcional, para algunos módulos).</li>
+                <li>Windows 10 o superior. Unicamente Windows porque durante la instalación ya se instalarán el resto de dependecias como PostgreSQL.</li>
+
             </ul>
             <h3>Instalación</h3>
             <ol>
@@ -62,10 +59,39 @@
             </ol>
             <h3>Configuración básica</h3>
             <p>Una vez instalado Odoo, se puede acceder a la interfaz web desde un navegador ingresando la dirección <code>http://localhost:8069</code>. Desde allí, se pueden crear bases de datos y configurar los módulos necesarios.</p>
-
         </section>
-        
-
+        <section id="productos">
+            <h2>Justificación y manual de instalación y explicación de alguna característica de los módulos instalados</h2>
+            <p>En esta sección se explicará cómo se da de alta un producto en el módulo de gestión de inventario.</p>
+            <h3>Alta de un producto</h3>
+            <ol>
+                <li>Inventario</li>
+                <li>Ventas</li>
+                <li>Sitio Web</li>
+                <li>Facturación</li>
+            </ol>
+        </section> 
+        <section id="backup">
+            <h2>Explicación del proceso de copia de seguridad y restauración de la base de datos</h2>
+            <p>Para realizar una copia de seguridad de la base de datos en Odoo, se puede utilizar la interfaz web o la línea de comandos.</p>
+            <h3>Copia de seguridad desde la interfaz web</h3>
+            <ol>
+                <li>Ir a Configuración &gt; Base de datos &gt; Copia de seguridad.</li>
+                <li>Seleccionar la base de datos que se desea respaldar.</li>
+                <li>Hacer clic en "Crear copia de seguridad".</li>
+            </ol>
+            <h3>Restauración desde la interfaz web</h3>
+            <ol>
+                <li>Ir a Configuración &gt; Base de datos &gt; Restaurar.</li>
+                <li>Seleccionar el archivo de respaldo.</li>
+                <li>Hacer clic en "Restaurar".</li>
+            </ol>
+        </section>
+        <section id="conclusiones">
+            <h2>Conclusiones</h2>
+            <p>Odoo es una herramienta poderosa para la gestión empresarial. Su instalación y configuración son relativamente sencillas, y su interfaz es amigable. La posibilidad de realizar copias de seguridad y restauraciones facilita la gestión de datos críticos.</p>
+            <p>La personalización de Odoo mediante módulos permite adaptar el software a las necesidades específicas de cada empresa, lo que lo convierte en una opción versátil y escalable.</p>
+        </section>
     </main>
 </body>
 </html>
