@@ -66,6 +66,12 @@ nav a:hover
     background-color: #e74c3c;
 }
 
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
 /* Secciones */
 section 
 {
